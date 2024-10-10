@@ -18,6 +18,9 @@ public class WorkExperience extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    private Resume resume;
+
     @Size(max = 50)
     @NotBlank
     private String companyName;

@@ -19,6 +19,9 @@ public class Education extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    private Resume resume;
+
     @Size(max = 20)
     @NotNull
     @Enumerated(EnumType.STRING)
