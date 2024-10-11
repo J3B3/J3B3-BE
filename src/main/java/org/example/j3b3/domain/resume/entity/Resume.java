@@ -26,4 +26,7 @@ public class Resume extends BaseEntity {
 
     @OneToMany(mappedBy = "resume")
     private List<Experience> experienceList;
+
+    @OneToMany(mappedBy = "resume")
+    private List<Certification> certificationList;
 }
