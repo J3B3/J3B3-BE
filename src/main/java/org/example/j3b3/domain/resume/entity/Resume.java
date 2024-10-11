@@ -20,4 +20,7 @@ public class Resume extends BaseEntity {
 
     @OneToMany(mappedBy = "resume")
     private List<WorkExperience> workExperienceList;
+
+    @OneToMany(mappedBy = "resume")
+    private List<Language> languageList;
 }
